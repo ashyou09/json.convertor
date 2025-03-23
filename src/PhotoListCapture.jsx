@@ -44,12 +44,15 @@ const PhotoListCapture = () => {
       });
 
       // Extract text using Tesseract.js
-      const { data: { text } } = await Tesseract.recognize(
+      const { data: { text, words } } = await Tesseract.recognize(
         canvas.toDataURL(),
         'eng',
-        { logger: m => console.log(m) }
+        { 
+          logger: m => console.log(m),
+          tessedit_pageseg_mode: '6', // Assume a single uniform block of text
+          tessedit_char_whitelist: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-., ' // Allow common characters
+        }
       );
-
       // Process the extracted text into JSON
       const lines = text.split('\n').filter(line => line.trim());
       const json = {
