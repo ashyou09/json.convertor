@@ -348,71 +348,7 @@ const PhotoListCapture = () => {
         </div>
       )}
 
-      <style jsx>{`
-        .photo-list-container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-        }
-        
-        .webcam-container {
-          border: 2px solid #ddd;
-          border-radius: 8px;
-          overflow: hidden;
-          margin-bottom: 20px;
-        }
-        
-        .controls {
-          display: flex;
-          gap: 10px;
-          margin-bottom: 20px;
-        }
-        
-        .button {
-          padding: 10px 20px;
-          border-radius: 4px;
-          border: none;
-          background-color: #007bff;
-          color: white;
-          cursor: pointer;
-          transition: background-color 0.3s;
-        }
-        
-        .button:disabled {
-          background-color: #ccc;
-          cursor: not-allowed;
-        }
-        
-        .button.loading {
-          background-color: #28a745;
-        }
-        
-        .error-message {
-          color: #dc3545;
-          padding: 10px;
-          margin: 10px 0;
-          border: 1px solid #dc3545;
-          border-radius: 4px;
-        }
-        
-        .preview-container img {
-          max-width: 100%;
-          border-radius: 4px;
-          margin-bottom: 20px;
-        }
-        
-        .text-preview, .json-preview {
-          background-color: #f8f9fa;
-          padding: 15px;
-          border-radius: 4px;
-          margin-bottom: 20px;
-        }
-        
-        pre {
-          white-space: pre-wrap;
-          word-wrap: break-word;
-        }
-      `}</style>
+      
     </div>
   );
 };
