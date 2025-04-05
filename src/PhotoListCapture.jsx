@@ -290,7 +290,7 @@ const PhotoListCapture = () => {
           ref={webcamRef}
           screenshotFormat="image/jpeg"
           videoConstraints={{
-            width: 1280,
+            width: 1000,
             height: 720,
             facingMode: "environment"
           }}
