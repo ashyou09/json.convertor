@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
 
+
 // Common English words dictionary (you can expand this)
 const commonWords = new Set([
   'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'i', 'it', 'for', 'not', 'on', 'with', 'he', 'as', 'you',
